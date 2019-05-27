@@ -1,6 +1,6 @@
 import itertools
 
-
+# This function will calculate the Horizontal, Vertical or Diagonal Winner
 def win(current_game):
 
     def all_same(l):
@@ -44,7 +44,10 @@ def win(current_game):
             return True
     return False
 
-
+'''
+This function will print the Tic Tac Toe board
+It Also does the error handling
+'''
 def game_board(game_map, player=0, row=0, col=0, just_display=False):
     try:
         if game_map[row][col] != 0:
@@ -67,7 +70,7 @@ def game_board(game_map, player=0, row=0, col=0, just_display=False):
         return game_map, False
 
 
-#win(game)
+
 play = True
 
 while play:
